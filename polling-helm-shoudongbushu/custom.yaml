@@ -1,0 +1,12 @@
+persistence:
+  enabled: true
+  persistentVolumeClaim:
+    database:
+      storageClass: "database"
+
+database:
+  type: internal
+  internal:
+    database: "polling"
+    username: "polling"
+    password: "polling321"
